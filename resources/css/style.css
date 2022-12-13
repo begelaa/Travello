@@ -32,6 +32,54 @@ header.main_header .header_right_menu{
     align-items: center;
 }
 
+
+
+@media (max-width: 1024px){
+
+    header.main_header .header_right_menu nav{
+        display: none;
+    }
+
+    header.main_header .container{        
+        flex-direction: column;
+        gap: 15px;
+
+    }
+
+    section.hero .container .hero_content{
+        margin: 0 auto;
+        text-align: center;        
+    }
+
+    section.hero .container .hero_content h1.page_title{
+        margin-top: 150px;
+        margin: 0 auto;
+        font-size: 30px;
+        line-height: 30px;
+        gap: 30px;
+    }
+    
+    
+    
+}
+
+
+@media (max-width: 360px){
+
+    header.main_header{
+        gap: 30px;
+        margin: auto;
+    }
+
+    header.main_header .header_right_menu{
+        display: none;
+    }
+    section.hero .container .hero_content h1.page_title{
+        margin-top: 90px;       
+    }
+    
+}
+
 header.main_header .header_right_menu nav{
     margin-right: 82px;
 }
