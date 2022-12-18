@@ -32,6 +32,11 @@ header.main_header .container{
 header.main_header .header_right_menu{
     display: flex;
     align-items: center;
+    margin: 0 20px;
+}
+
+header.main_header .logo{
+    margin: 0 20px;
 }
 
 header.main_header .header_right_menu nav{
@@ -143,7 +148,7 @@ section.hero figure img{
 }
 
 section.hero .hero_content{
-    margin: 150px 0 100px 0px;
+    margin: 150px 20px 100px 20px;
     max-width: 592px;
     color: #ffff;
     z-index: 2;

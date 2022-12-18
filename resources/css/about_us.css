@@ -29,18 +29,18 @@ section.about_us article{
     padding: 280px 0 0 280px;
 }
 
-section.about_us .about_us_block_text p.about_us_name{
+section.about_us .about_us_text p.about_us_name{
     color: #2094E6 ;
     font-family: var(--heading);
     font-size: 18px;
 }
 
-section.about_us .about_us_block_text h2.about_us_title{
+section.about_us .about_us_text h2.about_us_title{
     font-family: var(--heading);
     font-size: 45px;
 }
 
-section.about_us .about_us_block_text p.about_us_subtitle{
+section.about_us .about_us_text p.about_us_subtitle{
     font-family: var(--fonttext);
     font-size: 18px;
     line-height: 150%;
@@ -50,14 +50,16 @@ section.about_us .about_us_block_text p.about_us_subtitle{
 /* about_us_blocks section */
 
 
-section.about_us_blocks .container{
+section.about_us_blocks .container div.blocks{
     display: flex;
     text-decoration: none;
     gap: 20px;
+    margin: 0 20px;
+    
 }
 
 div.block a{
-    min-width: 285px;
+    width: 100%;
     min-height: 233px;
     display: flex;
     flex-direction: column;    
@@ -83,7 +85,7 @@ div.block a p{
 
 @media (max-width: 1024px){
     
-        section.about_us{
+    section.about_us{
             margin-top: 20px;
         }
 
@@ -108,7 +110,7 @@ div.block a p{
         padding: 10px;
     }
 
-    section.about_us div.container article.about_us_block_text{
+    section.about_us div.container article.about_us_text{
         text-align: center;
         display: flex;
         display: inline-block;
@@ -117,18 +119,20 @@ div.block a p{
         padding: 20px;
     }
 
+                                    /* about us blocks */
+
     section.about_us_blocks{
         margin-top: 20px;
     }
     
-    section.about_us_blocks div.container {
+    section.about_us_blocks div.container div.blocks{
         flex-wrap:wrap;
         text-align: center;
         justify-content: center;
     }
     
 
-    section.about_us_blocks div.container div.block a{        
+    section.about_us_blocks div.container div.blocks .block a{        
         margin: 0px 10px;
         max-width: 200px;
         max-height: 200px;
@@ -163,4 +167,18 @@ div.block a p{
     section.about_us div.container section.about_us_pictures figure.landscape{
         padding: 10px;
     }
+
+    section.about_us_blocks div.container div.blocks div.block a{
+        width: 300px;
+        height: 50px;
+    }
+
+    section.about_us_blocks div.container div.blocks div.block a h2{
+        font-size: 20px;
+    }
+
+    section.about_us_blocks div.container div.blocks div.block a p{
+        font-size: 10px;
+    }
 }
+
