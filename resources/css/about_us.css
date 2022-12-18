@@ -1,7 +1,7 @@
 section.about_us{
     display: flex;
     margin: 164px 0 130px 0;
-    height: 550px;    
+    min-height: 550px;    
 }
 
 section.about_us .container{
@@ -14,8 +14,7 @@ section.about_us article{
     display: flex;
     flex-direction: column;    
     margin-top: 20px;
-    max-width: 490px;
-    min-height: 385px;
+    padding: 0px 25px;
     color: rgb(0, 0, 0);
     font-size: 18px;
     font-family: var(--fonttext);
@@ -48,10 +47,120 @@ section.about_us .about_us_block_text p.about_us_subtitle{
 }
 
 
+/* about_us_blocks section */
 
 
+section.about_us_blocks .container{
+    display: flex;
+    text-decoration: none;
+    gap: 20px;
+}
+
+div.block a{
+    min-width: 285px;
+    min-height: 233px;
+    display: flex;
+    flex-direction: column;    
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    box-shadow:0 7px 29px 0px rgba(0, 0, 0,0.2);
+    padding:30px 27px;
+    margin-bottom: 128px;
+    gap: 15px;
+    color: black;
+}
+
+div.block a h2{
+    font-family: var(--heading);
+    font-size: 24px;
+}
+
+div.block a p{
+    font-family: var(--fonttext);
+    font-size: 16px;
+}
 
 
+@media (max-width: 1024px){
+    
+        section.about_us{
+            margin-top: 20px;
+        }
 
+    section.about_us .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-items: center;
+        padding: 0;
+    }
+    
+    section.about_us div.container .about_us_pictures figure{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        object-fit: cover;
+        max-width: 350px;
+        max-height: 350px;
+    }
+    section.about_us div.container section.about_us_pictures figure.landscape{
+        padding: 10px;
+    }
+
+    section.about_us div.container article.about_us_block_text{
+        text-align: center;
+        display: flex;
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    section.about_us_blocks{
+        margin-top: 20px;
+    }
+    
+    section.about_us_blocks div.container {
+        flex-wrap:wrap;
+        text-align: center;
+        justify-content: center;
+    }
     
 
+    section.about_us_blocks div.container div.block a{        
+        margin: 0px 10px;
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+   
+
+}
+
+@media(max-width: 360px){
+    section.about_us{
+        margin-top: 20px;
+    }
+
+    section.about_us .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-items: center;
+        padding: 0;
+    }
+
+    section.about_us div.container section.about_us_pictures figure{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        object-fit: cover;
+        max-width: 240px;
+        max-height: 240px;
+    }
+    section.about_us div.container section.about_us_pictures figure.landscape{
+        padding: 10px;
+    }
+}
