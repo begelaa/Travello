@@ -70,6 +70,10 @@ div.block a{
     margin-bottom: 128px;
     gap: 15px;
     color: black;
+    transition: 2s;
+    animation-name: slide_menu;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
 }
 
 div.block a h2{
@@ -82,12 +86,59 @@ div.block a p{
     font-size: 16px;
 }
 
+                        /* animation */
+
+.full_guide a:hover{
+    transform: scale(0.8);    
+}
+
+.transport {
+    animation-name: transport;
+    animation-duration: 4s;  
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+.transport a:hover{
+    transform:rotate3d(30px)
+}
+
+@keyframes transport {
+   from{left:-292px}
+   to{left:0px}
+}
+
+.easy_book{
+    animation-name: easy_book;
+    animation-duration: 4s;  
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+@keyframes easy_book {
+    from{left:-585px}
+    to{left:0px}
+}
+
+.camp_fire{
+    animation-name: camp_fire;
+    animation-duration: 4s;  
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+@keyframes camp_fire {
+    from{left:-877.5px}
+    to{left:0px}
+}
+
+
 
 @media (max-width: 1024px){
     
     section.about_us{
-            margin-top: 20px;
-        }
+        margin-top: 20px;
+    }
 
     section.about_us .container{
         display: flex;
@@ -170,7 +221,7 @@ div.block a p{
 
     section.about_us_blocks div.container div.blocks div.block a{
         width: 300px;
-        height: 50px;
+        height: 50px;        
     }
 
     section.about_us_blocks div.container div.blocks div.block a h2{
