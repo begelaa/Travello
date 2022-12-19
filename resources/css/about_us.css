@@ -59,15 +59,14 @@ section.about_us_blocks .container div.blocks{
 }
 
 div.block a{
-    width: 100%;
-    min-height: 233px;
+    min-width: 25px;
+    min-height: 23px;
     display: flex;
     flex-direction: column;    
     text-decoration: none;
     background-color: rgb(255, 255, 255);
     box-shadow:0 7px 29px 0px rgba(0, 0, 0,0.2);
     padding:30px 27px;
-    margin-bottom: 128px;
     gap: 15px;
     color: black;
     transition: 2s;
@@ -96,11 +95,10 @@ div.block a p{
     animation-name: transport;
     animation-duration: 4s;  
     animation-fill-mode: forwards;
-    position: relative;
 }
 
 .transport a:hover{
-    transform:rotate3d(30px)
+    transform: rotateZ(-5deg);
 }
 
 @keyframes transport {
@@ -112,8 +110,16 @@ div.block a p{
     animation-name: easy_book;
     animation-duration: 4s;  
     animation-fill-mode: forwards;
-    position: relative;
 }
+
+.easy_book a:hover{
+    transform: scaleY(0.9) rotateZ(3deg) rotateY(8deg);
+}
+
+.camp_fire a:hover{
+    transform:rotateY(-30deg) rotateX(-20deg);
+}
+
 
 @keyframes easy_book {
     from{left:-585px}
