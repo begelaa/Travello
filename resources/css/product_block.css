@@ -73,20 +73,36 @@ div.country::before{
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        margin-top: 10px;
     }
 
     section.product_block div.container div.country_blocks .country figure{
-        height: 100%;
-        width: 100%;
+        height: 300px;
+        width: 300px;
+        align-items: center;
+        justify-content: center;
         object-fit: cover;
     }
 
     section.product_block div.container div.country_blocks .country figure img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+        height: 300px;
+        width: 300px;
+        align-items: center;
+        justify-content: center;
     }
 
+    div.country::before{        
+        height: 300px;
+        width: 300px;
+        background-color:#1063B88C;
+       
+    }
+
+    div.country .product_text{
+        margin-top: -40px;
+        height: 300px;
+        width: 300px;
+    }
 
 
 }
