@@ -13,7 +13,6 @@
 
 header.main_header{
     padding: 20px 0px ;
-
     position: absolute;
     left: 0;
     top: 0;
@@ -63,6 +62,22 @@ header.main_header .header_right_menu nav{
     width: 100%;
     margin: 0px auto;
 }
+
+h3{
+    font-family: var(--heading);
+    font-size: 24px;
+}
+    
+p{
+    font-family: var(--fonttext);
+    font-size: 16px;
+}
+
+h2{
+    font-family: var(--heading);
+    font-size: 45px;
+}
+
 .button a{
     background:
     linear-gradient(-45deg, #000  40%, #fff 0 60%, #000  0) right/300% 100% no-repeat,
