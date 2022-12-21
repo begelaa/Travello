@@ -1,0 +1,53 @@
+.our_services{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .our_services_name{
+        color: #2094E6;
+    }
+}
+section.product_block .container .country_blocks{
+    display: flex;
+    gap: 20px;
+    margin: 40px 20px 0px 20px;
+    figure{
+    height: 100%;
+    width: 100%;
+    position: absolute; 
+        img{
+        height: 100%;
+        width: 100%;
+        }  
+        &::before{
+            content:'' ;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color:#1063B88C;
+            z-index: 1;
+        }
+    }    
+}
+.product_text{
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    min-height: 400px;
+    width: 100%;
+    gap: 20px;
+    padding: 0 20px;
+    z-index: 2;
+    
+}
+
+
+

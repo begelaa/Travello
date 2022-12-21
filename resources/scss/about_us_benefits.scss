@@ -1,0 +1,32 @@
+section.about_us_benefits .container div.blocks {
+    display: flex;
+    text-decoration: none;
+    gap: 20px;
+    margin: 0 20px;
+  }
+  
+  div.block a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: #ffffff;
+    box-shadow: 0 7px 29px 0px rgba(0, 0, 0, 0.2);
+    padding: 30px 27px;
+    gap: 15px;
+    color: black;
+    transition: 2s;
+    animation-name: slide_menu;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+  
+    & h2 {
+      font-family: var(--heading);
+      font-size: 24px;
+    }
+  
+    & p {
+      font-family: var(--fonttext);
+      font-size: 16px;
+    }
+}
+
